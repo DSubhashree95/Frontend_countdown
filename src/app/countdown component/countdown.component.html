@@ -1,0 +1,24 @@
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="16px" class="countdown-container">
+  <mat-card class="countdown-display">
+    <mat-card-content>
+      <div id="event-name" class="event-name">Time to {{ eventName }}</div>
+      <div id="countdown-text" class="countdown-text">{{ remainingTime }}</div>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="input-container">
+    <mat-form-field class="eventNameSize" appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput  #eventNameInput [value]="eventName" placeholder="Enter Event">
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Date</mat-label>
+      <input matInput [matDatepicker]="picker"  [value]="formattedEndDate" (dateChange)="onSetEndDate(eventNameInput, $event.value)" (click)="picker.open()" #endDateInput>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+  </div>
+
+
+</div>

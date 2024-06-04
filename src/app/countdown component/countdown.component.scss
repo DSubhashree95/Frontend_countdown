@@ -1,0 +1,95 @@
+
+.mat-form-field {
+  width: 100%;
+}
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.countdown-display {
+  width: 100%;
+  margin-bottom: 55px;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-size: min(8vw, 6vh);
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.event-name {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 130px;
+  color: #720b4c;
+ 
+}
+
+.countdown-text {
+  width: 100%;
+  text-align: center;
+}
+
+.eventNameSize {
+  padding: 11px 45px;
+}
+
+.mat-form-field {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-form-field-wrapper {
+  flex: 1;
+}
+
+.mat-form-field-flex {
+  display: flex;
+  align-items: center;
+}
+
+.mat-form-field-infix {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  .marginLeft {
+    margin-left: 0;
+    margin-top: 1px;
+  }
+
+  .countdown-display {
+    font:100%;
+  }
+
+  .event-name {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .event-name {
+    font-size: 8vw;
+   
+  }
+
+  .countdown-text {
+    font-size: 4vw;
+  }
+}
